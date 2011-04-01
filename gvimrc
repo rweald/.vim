@@ -60,7 +60,7 @@ function StartTerm()
 endfunction
 
 " Project Tree
-autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
+"autocmd VimEnter * call s:CdIfDirectory(expand("<amatch>"))
 autocmd FocusGained * call s:UpdateNERDTree()
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 
@@ -205,11 +205,11 @@ if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
 endif
 
-color blackpearl2
+color solarized
 set gfn=Menlo:h13
 if has("gui_macvim")
    macmenu &File.New\ Tab key=<nop>
    map <D-t> <Plug>PeepOpen
  end
 set guioptions=aAce
-set transparency=3
+set transparency=0

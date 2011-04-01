@@ -123,9 +123,12 @@ let macvim_hig_shift_movement = 1
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+
 " Map the escape key to 
 :imap jj <Esc>
 
 "Set it up so I can use my shell aliases
 
+call pathogen#runtime_append_all_bundles()
 
+let g:user_zen_expandabbr_key = '<D-e>' 
