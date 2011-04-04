@@ -1,9 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/Ryan/code/dokbot'
-let g:netrw_dirhist_2='/Users/Ryan/code'
-let g:netrw_dirhist_3='/Users/Ryan/code/todos/apps/todos'
-let g:netrw_dirhist_4='/Users/Ryan/code/todos'
-let g:netrw_dirhist_5='/Users/Ryan/Downloads/code'
-let g:netrw_dirhist_6='/Users/Ryan/code/mendeley'
-let g:netrw_dirhist_7='/Users/Ryan/.vim/bundle'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/Ryan/code/mendeley'
+let g:netrw_dirhist_2='/Users/Ryan/code/notification_central'
+let g:netrw_dirhist_3='/Users/Ryan/.vim/.git'
