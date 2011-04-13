@@ -1,2 +1,5 @@
 backup
+<<<<<<< HEAD
 tmp
+=======
+>>>>>>> 0403935... add the vim markdown preview to my config. You can now preview markdown
