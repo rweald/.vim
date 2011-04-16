@@ -205,7 +205,10 @@ if filereadable(expand("~/.gvimrc.local"))
   source ~/.gvimrc.local
 endif
 
+"color solarized
+set background=dark
 color solarized
+
 set gfn=Menlo:h13
 if has("gui_macvim")
    macmenu &File.New\ Tab key=<nop>
