@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/Ryan/code/sharethrough/devour-clone'
-let g:netrw_dirhist_2='/Users/Ryan/.bashprofile'
-let g:netrw_dirhist_3='/Users/Ryan/code/dokbot'
-let g:netrw_dirhist_4='/Users/Ryan/code/ryan-cogs-blog'
-let g:netrw_dirhist_5='/Users/Ryan/.vim/snippets/ruby-factorygirl'
