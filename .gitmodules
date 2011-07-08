@@ -20,5 +20,5 @@
 	path = bundle/ruby-refactor
 	url = https://github.com/ecomba/vim-ruby-refactoring.git
 [submodule "bundle/sweet-rspec-vim"]
-  path = bundle/sweet-rspec-vim
-  url = https://github.com/rainux/sweet-rspec-vim.git
+	path = bundle/sweet-rspec-vim
+	url = https://github.com/rainux/sweet-rspec-vim.git
