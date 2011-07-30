@@ -134,3 +134,7 @@ endif
 call pathogen#runtime_append_all_bundles()
 
 let g:user_zen_expandabbr_key = '<D-e>' 
+
+map <C-l> <C-w>l
+map <C-h> <C-w>h
+
