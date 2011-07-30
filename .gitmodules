@@ -34,3 +34,6 @@
 [submodule "bundle/jslint-vim"]
 	path = bundle/jslint-vim
 	url = https://github.com/joestelmach/javaScriptLint.vim.git
+[submodule "vim-handlebars"]
+	path = vim-handlebars
+	url = https://github.com/nono/vim-handlebars.git
