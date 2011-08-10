@@ -37,3 +37,6 @@
 [submodule "vim-handlebars"]
 	path = vim-handlebars
 	url = https://github.com/nono/vim-handlebars.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git

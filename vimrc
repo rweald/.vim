@@ -2,7 +2,6 @@ set nocompatible
 
 set number
 set ruler
-syntax on
 
 " Set encoding
 set encoding=utf-8
@@ -65,7 +64,6 @@ endfunction
 
 " make and python use real tabs
 au FileType make                                     set noexpandtab
-au FileType python                                   set noexpandtab
 
 " Thorfile, Rakefile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru}    set ft=ruby
@@ -79,7 +77,6 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 set backspace=indent,eol,start
 
 " load the plugin and indent settings for the detected filetype
-filetype plugin indent on
 
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
@@ -131,7 +128,13 @@ endif
 
 "Set it up so I can use my shell aliases
 
-call pathogen#runtime_append_all_bundles()
+"Run the pathogen stuff
+call pathogen#infect()
+syntax on
+filetype plugin indent on
+
+
+
 
 let g:user_zen_expandabbr_key = '<D-e>' 
 
