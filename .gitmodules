@@ -43,3 +43,12 @@
 [submodule "bundle/matchit-vim"]
 	path = bundle/matchit-vim
 	url = https://github.com/edsono/vim-matchit.git
+[submodule "bundle/bundler-vim"]
+	path = bundle/bundler-vim
+	url = https://github.com/tpope/vim-bundler.git
+[submodule "bundle/fugitive-vim"]
+	path = bundle/fugitive-vim
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/autotag-vim"]
+	path = bundle/autotag-vim
+	url = https://github.com/marcus/autotag.vim.git
