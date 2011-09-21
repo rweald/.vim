@@ -52,3 +52,6 @@
 [submodule "bundle/autotag-vim"]
 	path = bundle/autotag-vim
 	url = https://github.com/marcus/autotag.vim.git
+[submodule "bundle/scala-vim"]
+	path = bundle/scala-vim
+	url = https://github.com/rosstimson/scala-vim-support.git
