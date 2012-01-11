@@ -5,8 +5,13 @@ if has("gui_macvim")
 
   " Command-T for CommandT
   macmenu &File.New\ Tab key=<D-T>
+<<<<<<< HEAD
   map <D-t> :CommandT<CR>
   imap <D-t> :CommandT<CR>
+=======
+  map <D-t> t :CommandT<CR>
+  imap <D-t> t :CommandT<CR>
+>>>>>>> 56183e8... remove peeopen and remap <D-t> t to command t plugin.
 
   " Command-Return for fullscreen
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
@@ -207,5 +212,6 @@ set background=dark
 color twilight
 
 set gfn=Inconsolata-dz:h16
+
 set guioptions=aAce
 set transparency=0
