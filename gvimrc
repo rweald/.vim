@@ -5,8 +5,8 @@ if has("gui_macvim")
 
   " Command-T for CommandT
   macmenu &File.New\ Tab key=<D-T>
-  map <Leader>t :CommandT<CR>
-  imap <D-t> <Esc>:CommandT<CR>
+  map <D-t> t :CommandT<CR>
+  imap <D-t> t :CommandT<CR>
 
   " Command-Return for fullscreen
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
@@ -49,9 +49,6 @@ endif
 
 " Start without the toolbar
 set guioptions-=T
-
-" Default gui color scheme
-color blackpearl2
 
 " ConqueTerm wrapper
 function StartTerm()
@@ -207,12 +204,8 @@ endif
 
 "color solarized
 set background=dark
-color solarized
+color twilight
 
-set gfn=Menlo:h14
-if has("gui_macvim")
-   macmenu &File.New\ Tab key=<nop>
-   map <D-t> <Plug>PeepOpen
- end
+set gfn=Menlo:h15
 set guioptions=aAce
 set transparency=0
