@@ -28,7 +28,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc
 set laststatus=2
 
 " Show column line for 80 characters
-set colorcolumn=80
+" set colorcolumn=80
 
 " Without setting this, ZoomWin restores windows in a way that causes
 " equalalways behavior to be triggered the next time CommandT is used.
