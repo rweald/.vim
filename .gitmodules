@@ -70,3 +70,6 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/yank-ring-vim"]
+	path = bundle/yank-ring-vim
+	url = https://github.com/vim-scripts/YankRing.vim.git
