@@ -5,8 +5,8 @@ if has("gui_macvim")
 
   " Command-T for CommandT
   macmenu &File.New\ Tab key=<D-T>
-  map <D-t> t :CommandT<CR>
-  imap <D-t> t :CommandT<CR>
+  map <D-t> :CommandT<CR>
+  imap <D-t> :CommandT<CR>
 
   " Command-Return for fullscreen
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
