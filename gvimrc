@@ -212,6 +212,5 @@ set background=dark
 color twilight
 
 set gfn=Inconsolata-dz:h16
-
 set guioptions=aAce
 set transparency=0
