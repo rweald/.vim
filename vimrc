@@ -144,3 +144,11 @@ let g:user_zen_expandabbr_key = '<D-e>'
 map <C-l> <C-w>l
 map <C-h> <C-w>h
 
+"re-select after indenting
+vnoremap < <gv
+vnoremap > >gv
+
+inoremap jk <Esc>
+
+"remove search hilighting
+noremap <silent><Leader>/ :noh <CR>
