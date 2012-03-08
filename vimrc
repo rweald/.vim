@@ -152,5 +152,10 @@ inoremap jk <Esc>
 
 "remove search hilighting
 noremap <silent><Leader>/ :noh <CR>
+nnoremap <leader><space> :noh<cr>
+
+" make vim regexs behave like normal regexes
+nnoremap / /\v
+vnoremap / /\v
 
 noremap <F1> <Esc>
