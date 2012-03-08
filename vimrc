@@ -152,3 +152,5 @@ inoremap jk <Esc>
 
 "remove search hilighting
 noremap <silent><Leader>/ :noh <CR>
+
+noremap <F1> <Esc>
