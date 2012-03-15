@@ -209,7 +209,7 @@ endif
 set background=dark
 color solarized
 
-set gfn=Menlo:h14
+set gfn=Inconsolata-dz:h14
 if has("gui_macvim")
    macmenu &File.New\ Tab key=<nop>
    map <D-t> <Plug>PeepOpen
