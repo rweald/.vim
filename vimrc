@@ -162,3 +162,7 @@ nnoremap / /\v
 vnoremap / /\v
 
 noremap <F1> <Esc>
+
+
+"make yy d etc copy to clipboard
+set clipboard=unnamed
