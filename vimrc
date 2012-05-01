@@ -162,3 +162,9 @@ nnoremap / /\v
 vnoremap / /\v
 
 noremap <F1> <Esc>
+
+"mappings for working with buffers
+noremap <C-n> :bn <Enter>
+noremap <C-p> :bp <Enter>
+noremap <C-l> :ls <Enter>
+noremap <leader>c :enew <Enter>
