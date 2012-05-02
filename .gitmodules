@@ -85,3 +85,6 @@
 [submodule "bundle/vim-ctrlp"]
 	path = bundle/vim-ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/vim-buffer-explorer"]
+	path = bundle/vim-buffer-explorer
+	url = https://github.com/widox/vim-buffer-explorer-plugin.git
