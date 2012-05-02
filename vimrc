@@ -127,7 +127,7 @@ if filereadable(expand("~/.vimrc.local"))
 endif
 
 " Map the escape key to 
-:imap jj <Esc>
+inoremap jj <Esc>
 
 "Set it up so I can use my shell aliases
 
@@ -135,9 +135,6 @@ endif
 call pathogen#infect()
 syntax on
 filetype plugin indent on
-
-
-
 
 let g:user_zen_expandabbr_key = '<D-e>' 
 
