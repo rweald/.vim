@@ -203,8 +203,8 @@ endif
 
 "color solarized
 set background=dark
-color twilight
+color solarized
 
-set gfn=Inconsolata-dz:h16
+set gfn=Inconsolata-dz:h14
 set guioptions=aAce
 set transparency=0
