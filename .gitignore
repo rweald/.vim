@@ -1,4 +1,5 @@
 backup
+sessions/
 tmp
 .netrwhist
 .DS_Store
