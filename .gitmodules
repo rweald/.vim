@@ -76,3 +76,6 @@
 [submodule "bundle/checksynxtax-vim"]
 	path = bundle/checksynxtax-vim
 	url = https://github.com/tomtom/checksyntax_vim.git
+[submodule "bundle/vim-mru"]
+	path = bundle/vim-mru
+	url = https://github.com/vim-scripts/mru.vim.git
