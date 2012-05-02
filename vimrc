@@ -169,3 +169,7 @@ noremap <leader>p :bp <Enter>
 noremap <leader>l :ls <Enter>
 noremap <leader>c :enew <Enter>
 
+"Customization of ctrl-p plugin
+noremap <leader>t :CtrlP <Enter>
+inoremap <leader>t :CtrlP <Enter>
+let g:ctrlp_working_path_mode = 2
