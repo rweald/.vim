@@ -15,6 +15,10 @@ if has("gui_macvim")
   " Command-/ to toggle comments
   map <D-/> <plug>NERDCommenterToggle<CR>
 
+  "Open up ctrl-p 
+  macmenu &File.New\ Tab key=<nop>
+  map <D-t> :CtrlP <CR>
+
   " Command-][ to increase/decrease indentation
   vmap <D-]> >gv
   vmap <D-[> <gv
