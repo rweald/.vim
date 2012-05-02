@@ -127,7 +127,7 @@ if filereadable(expand("~/.vimrc.local"))
 endif
 
 " Map the escape key to 
-:imap jj <Esc>
+inoremap jj <Esc>
 
 "Set it up so I can use my shell aliases
 
@@ -135,9 +135,6 @@ endif
 call pathogen#infect()
 syntax on
 filetype plugin indent on
-
-
-
 
 let g:user_zen_expandabbr_key = '<D-e>' 
 
@@ -166,5 +163,17 @@ noremap <F1> <Esc>
 "mappings for working with buffers
 noremap <C-n> :bn <Enter>
 noremap <C-p> :bp <Enter>
-noremap <C-l> :ls <Enter>
 noremap <leader>c :enew <Enter>
+"make yy d etc copy to clipboard
+set clipboard=unnamed
+
+"Mappings for working with buffers
+noremap <leader>n :bn <Enter>
+noremap <leader>p :bp <Enter>
+noremap <leader>l :ls <Enter>
+noremap <leader>c :enew <Enter>
+
+"Customization of ctrl-p plugin
+noremap <leader>t :CtrlP <Enter>
+inoremap <leader>t :CtrlP <Enter>
+let g:ctrlp_working_path_mode = 2

@@ -76,3 +76,18 @@
 [submodule "bundle/checksynxtax-vim"]
 	path = bundle/checksynxtax-vim
 	url = https://github.com/tomtom/checksyntax_vim.git
+[submodule "bundle/vim-mru"]
+	path = bundle/vim-mru
+	url = https://github.com/vim-scripts/mru.vim.git
+[submodule "vim-ctrlp"]
+	path = vim-ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/vim-ctrlp"]
+	path = bundle/vim-ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/vim-buffer-explorer"]
+	path = bundle/vim-buffer-explorer
+	url = https://github.com/widox/vim-buffer-explorer-plugin.git
+[submodule "bundle/vim-session"]
+	path = bundle/vim-session
+	url = https://github.com/xolox/vim-session.git
