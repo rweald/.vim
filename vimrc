@@ -163,6 +163,12 @@ vnoremap / /\v
 
 noremap <F1> <Esc>
 
-
 "make yy d etc copy to clipboard
 set clipboard=unnamed
+
+"Mappings for working with buffers
+noremap <leader>n :bn <Enter>
+noremap <leader>p :bp <Enter>
+noremap <leader>l :ls <Enter>
+noremap <leader>c :enew <Enter>
+
