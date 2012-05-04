@@ -28,7 +28,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc
 set laststatus=2
 
 " Show column line for 80 characters
-set colorcolumn=80
+" set colorcolumn=80
 
 " Without setting this, ZoomWin restores windows in a way that causes
 " equalalways behavior to be triggered the next time CommandT is used.
@@ -160,6 +160,10 @@ vnoremap / /\v
 
 noremap <F1> <Esc>
 
+"mappings for working with buffers
+noremap <C-n> :bn <Enter>
+noremap <C-p> :bp <Enter>
+noremap <leader>c :enew <Enter>
 "make yy d etc copy to clipboard
 set clipboard=unnamed
 
@@ -171,5 +175,4 @@ noremap <leader>c :enew <Enter>
 
 "Customization of ctrl-p plugin
 noremap <leader>t :CtrlP <Enter>
-inoremap <leader>t :CtrlP <Enter>
 let g:ctrlp_working_path_mode = 2
