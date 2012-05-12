@@ -126,9 +126,6 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
-" Map the escape key to 
-inoremap jj <Esc>
-
 "Set it up so I can use my shell aliases
 
 "Run the pathogen stuff
@@ -148,6 +145,8 @@ map <leader>v :vsplit <cr>
 vnoremap < <gv
 vnoremap > >gv
 
+" Map the escape key to 
+inoremap jj <Esc>
 inoremap jk <Esc>
 
 "remove search hilighting
