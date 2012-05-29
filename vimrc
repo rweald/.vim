@@ -171,6 +171,7 @@ noremap <leader>n :bn <Enter>
 noremap <leader>p :bp <Enter>
 noremap <leader>l :ls <Enter>
 noremap <leader>c :enew <Enter>
+set hidden
 
 "Customization of ctrl-p plugin
 noremap <leader>t :CtrlP <Enter>
