@@ -150,6 +150,7 @@ inoremap jj <Esc>
 inoremap jk <Esc>
 
 "remove search hilighting
+set nohlsearch
 noremap <silent><Leader>/ :noh <CR>
 nnoremap <leader><space> :noh<cr>
 
