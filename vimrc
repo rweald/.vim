@@ -161,8 +161,6 @@ noremap <F1> <Esc>
 noremap <C-n> :bn <Enter>
 noremap <C-p> :bp <Enter>
 noremap <leader>c :enew <Enter>
-"make yy d etc copy to clipboard
-set clipboard=unnamed
 
 "Mappings for working with buffers
 noremap <leader>n :bn <Enter>
