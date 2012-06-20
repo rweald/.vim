@@ -135,10 +135,7 @@ filetype plugin indent on
 
 let g:user_zen_expandabbr_key = '<D-e>' 
 
-"Make it easier to move between splits.
-map <C-l> <C-w>l
-map <C-h> <C-w>h
-
+"handy mapping for vertical split windows
 map <leader>v :vsplit <cr>
 
 "re-select after indenting
