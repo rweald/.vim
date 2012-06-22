@@ -82,7 +82,7 @@ function s:CdIfDirectory(directory)
   endif
 
   if directory
-    NERDTree
+    " NERDTree
     wincmd p
     bd
   endif
@@ -141,7 +141,7 @@ function ChangeDirectory(dir, ...)
   execute "cd " . a:dir
   let stay = exists("a:1") ? a:1 : 1
 
-  NERDTree
+  " NERDTree
 
   if !stay
     wincmd p
@@ -190,7 +190,6 @@ RUBY
 endfunction
 
 " Define the NERDTree-aware aliases
-call s:DefineCommand("cd", "ChangeDirectory")
 call s:DefineCommand("touch", "Touch")
 call s:DefineCommand("rm", "Remove")
 call s:DefineCommand("e", "Edit")

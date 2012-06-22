@@ -37,7 +37,7 @@ set noequalalways
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
-map <Leader>n :NERDTreeToggle<CR>
+map <Leader>nt :NERDTreeToggle<CR>
 
 " Command-T configuration
 let g:CommandTMaxHeight=20
@@ -74,7 +74,7 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru}    set ft=ruby
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
-au BufRead,BufNewFile *.txt call s:setupWrapping()
+" au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -126,9 +126,6 @@ if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
-" Map the escape key to 
-inoremap jj <Esc>
-
 "Set it up so I can use my shell aliases
 
 "Run the pathogen stuff
@@ -138,19 +135,19 @@ filetype plugin indent on
 
 let g:user_zen_expandabbr_key = '<D-e>' 
 
-"Make it easier to move between splits.
-map <C-l> <C-w>l
-map <C-h> <C-w>h
-
+"handy mapping for vertical split windows
 map <leader>v :vsplit <cr>
 
 "re-select after indenting
 vnoremap < <gv
 vnoremap > >gv
 
+" Map the escape key to 
+inoremap jj <Esc>
 inoremap jk <Esc>
 
 "remove search hilighting
+set nohlsearch
 noremap <silent><Leader>/ :noh <CR>
 nnoremap <leader><space> :noh<cr>
 
@@ -164,16 +161,22 @@ noremap <F1> <Esc>
 noremap <C-n> :bn <Enter>
 noremap <C-p> :bp <Enter>
 noremap <leader>c :enew <Enter>
-"make yy d etc copy to clipboard
-set clipboard=unnamed
 
 "Mappings for working with buffers
 noremap <leader>n :bn <Enter>
 noremap <leader>p :bp <Enter>
 noremap <leader>l :ls <Enter>
 noremap <leader>c :enew <Enter>
+set hidden
 
 "Customization of ctrl-p plugin
 noremap <leader>t :CtrlP <Enter>
-inoremap <leader>t :CtrlP <Enter>
 let g:ctrlp_working_path_mode = 2
+
+"Handy text processing commands
+command TrimWhiteSpace %s/\s\+$//
+command TitleCase s/\<\(\w\)\(\w*\)\>/\u\1\L\2/g
+
+"Automatically remove trailing whitespace
+autocmd FileType ruby,python,javascript,java autocmd BufWritePre <buffer> :%s/\s\+$//e
+
