@@ -172,3 +172,8 @@ set hidden
 "Customization of ctrl-p plugin
 noremap <leader>t :CtrlP <Enter>
 let g:ctrlp_working_path_mode = 2
+
+"Handy text processing commands
+
+command TrimWhiteSpace %s/\s\+$//
+command TitleCase s/\<\(\w\)\(\w*\)\>/\u\1\L\2/g
