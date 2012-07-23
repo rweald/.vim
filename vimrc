@@ -183,3 +183,5 @@ autocmd FileType ruby,python,javascript,java autocmd BufWritePre <buffer> :%s/\s
 "Handy mapping to cd to current files directory
 noremap <leader>cd :cd %:p:h <Enter>
 
+"Automatically read file changes from disk
+set autoread
