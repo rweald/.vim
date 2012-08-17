@@ -185,3 +185,6 @@ noremap <leader>cd :cd %:p:h <Enter>
 
 "Automatically read file changes from disk
 set autoread
+
+"Turn off the any audible or visual bell
+set vb t_vb=
