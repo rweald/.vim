@@ -30,20 +30,9 @@ set laststatus=2
 " Show column line for 80 characters
 " set colorcolumn=80
 
-" Without setting this, ZoomWin restores windows in a way that causes
-" equalalways behavior to be triggered the next time CommandT is used.
-" This is likely a bludgeon to solve some other issue, but it works
-set noequalalways
-
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
 map <Leader>nt :NERDTreeToggle<CR>
-
-" Command-T configuration
-let g:CommandTMaxHeight=20
-
-" ZoomWin configuration
-map <Leader><Leader> :ZoomWin<CR>
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
@@ -62,7 +51,6 @@ endfunction
 
 function s:setupMarkup()
   call s:setupWrapping()
-  map <buffer> <Leader>p :Mm <CR>
 endfunction
 
 " make and python use real tabs
@@ -78,8 +66,6 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
-" load the plugin and indent settings for the detected filetype
 
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
@@ -125,8 +111,6 @@ let macvim_hig_shift_movement = 1
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
-
-"Set it up so I can use my shell aliases
 
 "Run the pathogen stuff
 call pathogen#infect()
