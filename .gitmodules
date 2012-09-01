@@ -67,15 +67,9 @@
 [submodule "bundle/vim-powerline"]
 	path = bundle/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
-[submodule "bundle/checksynxtax-vim"]
-	path = bundle/checksynxtax-vim
-	url = https://github.com/tomtom/checksyntax_vim.git
 [submodule "bundle/vim-mru"]
 	path = bundle/vim-mru
 	url = https://github.com/vim-scripts/mru.vim.git
-[submodule "vim-ctrlp"]
-	path = vim-ctrlp
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule "bundle/vim-ctrlp"]
 	path = bundle/vim-ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
