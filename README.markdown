@@ -1,6 +1,6 @@
 Custom Vim Configuration that I use. 
 
-Thanks in large part to [Janus
+Initially inspired by the amazing [Janus
 Script](https://github.com/carlhuda/janus)
 
 #Installation Instructions
