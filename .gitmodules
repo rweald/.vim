@@ -112,3 +112,6 @@
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
 	url = https://github.com/kevinstreit/VIM-Latex.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
