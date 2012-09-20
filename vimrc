@@ -50,7 +50,8 @@ function s:setupWrapping()
 endfunction
 
 function s:setupMarkup()
-  call s:setupWrapping()
+  "call s:setupWrapping()
+  set spell
 endfunction
 
 " make and python use real tabs
@@ -60,7 +61,7 @@ au FileType make                                     set noexpandtab
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru}    set ft=ruby
 
 " md, markdown, and mk are markdown and define buffer-local preview
-"au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
+au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
 
 " au BufRead,BufNewFile *.txt call s:setupWrapping()
 
@@ -172,3 +173,49 @@ set autoread
 
 "Turn off the any audible or visual bell
 set vb t_vb=
+
+" Make working with wrap easier
+noremap <silent> <Leader> w :call ChooseWrap()<CR>
+function ChooseWrap()
+  let l:choice=confirm("Toggle Wrapping?", "&yes\n&no", 0)
+  if l:choice==1
+    if &wrap
+      call DisableDisplayWrapping()
+    else
+      call EnableDisplayWrapping()
+    endif
+  endif
+endfunction
+
+function EnableDisplayWrapping()
+  if !&wrap
+    setlocal wrap
+    " don't skip wrapped lines
+    nnoremap j gj
+    nnoremap k gk
+    vnoremap j gj
+    vnoremap k gk
+    nnoremap <buffer> <Up> gk
+    nnoremap <buffer> <Down> gj
+    inoremap <buffer> <Up> <C-O>gk
+    inoremap <buffer> <Down> <C-O>gj
+    vnoremap <buffer> <Up> gk
+    vnoremap <buffer> <Down> gj
+  endif
+endfunction
+
+function DisableDisplayWrapping()
+  if &wrap
+    setlocal nowrap
+    nunmap j
+    nunmap k
+    vunmap j
+    vunmap k
+    nunmap <buffer> <Up>
+    nunmap <buffer> <Down>
+    iunmap <buffer> <Up>
+    iunmap <buffer> <Down>
+    vunmap <buffer> <Up>
+    vunmap <buffer> <Down>
+  endif
+endfunction
