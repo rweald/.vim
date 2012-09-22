@@ -22,7 +22,7 @@ set smartcase
 
 " Tab completion
 set wildmode=list:longest,list:full
-set wildignore+=*.o,*.obj,.git,*.rbc
+set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
 " Status bar
 set laststatus=2
@@ -36,6 +36,7 @@ map <Leader>nt :NERDTreeToggle<CR>
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
+map <C-\> :tnext<CR>
 
 " Remember last location in file
 if has("autocmd")
@@ -59,6 +60,9 @@ au FileType make                                     set noexpandtab
 
 " Thorfile, Rakefile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Thorfile,config.ru}    set ft=ruby
+
+"set json as javascript file type
+au BufNewFile,BufRead *.json set ft=javascript
 
 " md, markdown, and mk are markdown and define buffer-local preview
 au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
