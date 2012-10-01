@@ -35,7 +35,6 @@ set laststatus=2
 
 " NERDTree configuration
 let NERDTreeIgnore=['\.rbc$', '\~$']
-map <Leader>nt :NERDTreeToggle<CR>
 
 " CTags
 map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
