@@ -181,7 +181,7 @@ set autoread
 set vb t_vb=
 
 " Make working with wrap easier
-noremap <silent> <Leader> w :call ChooseWrap()<CR>
+noremap <silent> <Leader>w :call ChooseWrap()<CR>
 function ChooseWrap()
   let l:choice=confirm("Toggle Wrapping?", "&yes\n&no", 0)
   if l:choice==1
