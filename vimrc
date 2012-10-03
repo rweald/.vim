@@ -1,8 +1,5 @@
 set nocompatible
 
-" change the default leader
-let mapleader=","
-
 set number
 set ruler
 
