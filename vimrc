@@ -164,6 +164,8 @@ set hidden
 
 "Customization of ctrl-p plugin
 noremap <leader>t :CtrlP <Enter>
+noremap <leader>cpc :CtrlPClearCache <Enter>
+
 let g:ctrlp_working_path_mode = 2
 
 "Handy text processing commands
