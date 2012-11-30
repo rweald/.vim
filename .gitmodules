@@ -130,3 +130,6 @@
 [submodule "bundle/vim-sql-utilities"]
 	path = bundle/vim-sql-utilities
 	url = https://github.com/vim-scripts/SQLUtilities.git
+[submodule "vim-change-sql-case"]
+	path = vim-change-sql-case
+	url = https://github.com/vim-scripts/changesqlcase.vim.git
