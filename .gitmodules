@@ -124,3 +124,9 @@
 [submodule "bundle/snipmate-snippets"]
 	path = bundle/snipmate-snippets
 	url = git@github.com:rweald/snipmate-snippets.git
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "bundle/vim-sql-utilities"]
+	path = bundle/vim-sql-utilities
+	url = https://github.com/vim-scripts/SQLUtilities.git
