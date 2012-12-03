@@ -133,3 +133,6 @@
 [submodule "vim-change-sql-case"]
 	path = vim-change-sql-case
 	url = https://github.com/vim-scripts/changesqlcase.vim.git
+[submodule "bundle/vim-change-sql-case"]
+	path = bundle/vim-change-sql-case
+	url = https://github.com/vim-scripts/changesqlcase.vim.git
