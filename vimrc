@@ -173,7 +173,7 @@ command TrimWhiteSpace %s/\s\+$//
 command TitleCase s/\<\(\w\)\(\w*\)\>/\u\1\L\2/g
 
 "Automatically remove trailing whitespace
-autocmd FileType ruby,python,javascript,java autocmd BufWritePre <buffer> :%s/\s\+$//e
+autocmd FileType ruby,python,javascript,java,sql autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 "Handy mapping to cd to current files directory
 noremap <leader>cd :cd %:p:h <Enter>
