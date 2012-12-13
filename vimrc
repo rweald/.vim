@@ -175,6 +175,8 @@ command TitleCase s/\<\(\w\)\(\w*\)\>/\u\1\L\2/g
 "Automatically remove trailing whitespace
 autocmd FileType ruby,python,javascript,java,sql autocmd BufWritePre <buffer> :%s/\s\+$//e
 
+au BufRead,BufNewFile *.sbt set filetype=scala
+
 "Handy mapping to cd to current files directory
 noremap <leader>cd :cd %:p:h <Enter>
 
