@@ -186,6 +186,9 @@ set autoread
 "Turn off the any audible or visual bell
 set vb t_vb=
 
+"Use Ag instead of ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
+
 " Make working with wrap easier
 noremap <silent> <Leader>w :call ChooseWrap()<CR>
 function ChooseWrap()
