@@ -126,6 +126,9 @@ filetype plugin indent on
 
 let g:user_zen_expandabbr_key = '<D-e>' 
 
+"Setup the default register
+set clipboard="1
+
 "handy mapping for vertical split windows
 map <leader>v :vsplit <cr>
 
@@ -157,7 +160,6 @@ noremap <leader>c :enew <Enter>
 noremap <leader>n :bn <Enter>
 noremap <leader>p :bp <Enter>
 noremap <leader>l :ls <Enter>
-noremap <leader>c :enew <Enter>
 noremap <leader>b :CtrlPBuffer <Enter>
 
 set hidden
