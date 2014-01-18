@@ -171,6 +171,7 @@ set gfn=Inconsolata-dz:h14
 if has("gui_macvim")
    macmenu &File.New\ Tab key=<nop>
    map <D-t> <Plug>PeepOpen
+   map <C-p> <Plug>PeepOpen
  end
 set guioptions=aAce
 set transparency=0
