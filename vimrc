@@ -169,6 +169,12 @@ noremap <leader>t :CtrlP <Enter>
 noremap <leader>cpc :CtrlPClearCache <Enter>
 
 let g:ctrlp_working_path_mode = 2
+let g:ctrlp_working_path_mode = 2
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)|bower_components|node_modules$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
 
 "Handy text processing commands
 command TrimWhiteSpace %s/\s\+$//
