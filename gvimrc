@@ -173,7 +173,7 @@ if has("gui_macvim")
    map <D-t> <Plug>PeepOpen
    map <C-p> <Plug>PeepOpen
  end
-set guioptions=aAce
+set guioptions=Ace
 set transparency=0
 
 " Include user's local vim config
