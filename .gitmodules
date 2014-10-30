@@ -82,9 +82,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "bundle/vim-ack"]
-	path = bundle/vim-ack
-	url = https://github.com/mileszs/ack.vim.git
 [submodule "bundle/vim-align"]
 	path = bundle/vim-align
 	url = https://github.com/vim-scripts/Align.git
@@ -133,3 +130,6 @@
 [submodule "bundle/vim-change-sql-case"]
 	path = bundle/vim-change-sql-case
 	url = https://github.com/vim-scripts/changesqlcase.vim.git
+[submodule "bundle/vim-ag"]
+	path = bundle/vim-ag
+	url = git@github.com:rking/ag.vim.git
